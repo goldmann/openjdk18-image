@@ -19,8 +19,9 @@ labels:
 ports:
     - value: 8080
 dependencies:
-    - url: ..github/itsef
+    # this is not needed, because theese modules are in this repo
+    - url: https://github.com/dbecvarik/openjdk18-image/ 
       scope: provided
 modules:
     - xpass.common
-      xpaas.common.maven.s2i
+    - xpaas.common.maven.s2i
