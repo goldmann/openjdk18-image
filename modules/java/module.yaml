@@ -1,0 +1,8 @@
+name: "xpaas.common.java"
+description: "Provides basic configuration and common scripts for running Java based applications."
+version: "2.0"
+execute:
+  - configure_alternatives
+    user: 0
+  - install_as_root
+    user: 0
