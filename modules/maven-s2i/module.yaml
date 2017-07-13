@@ -1,0 +1,10 @@
+name: "xpaas.common.maven-s2i"
+description: "Provides basic maven support for OpenShift S2I images."
+version: "2.0"
+execute:
+    - install_as_root
+      user: 0
+# this dependency is unnecesary becase modules share repos - if they don't there will be something like:
+dependencies:
+    - url: github/module_with_xpass.common.java
+      scope: provided # we dont care about version and so, we just check the module is there

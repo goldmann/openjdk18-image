@@ -1,0 +1,9 @@
+#!/bin/bash
+# Add s2i scripts and make the image S2I-enabled
+set -e
+
+cp -r ${CCT_MODULE_PATH}/added/s2i /usr/local
+chmod ug+x /usr/local/s2i/*
+
+chgrp -R root /usr/local/s2i/
+chmod -R g+rwX /usr/local/s2i/
