@@ -1,0 +1,11 @@
+name: xpaas.common
+description: "Common modules for Red Hat xPaaS images."
+version: "2.0"
+dependencies:
+    - url: https://github.com/dbecvarik/xpaas.common.jolokia
+      ref: master
+      scope: required
+modules:
+    - xpaas.common.jolokia
+      xpaas.common.hawkular
+      xpaas.common.java
